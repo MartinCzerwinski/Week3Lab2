@@ -1,0 +1,26 @@
+<%-- 
+    Document   : ageCalculator
+    Created on : Sep 27, 2017, 1:08:07 PM
+    Author     : 727525
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>Simple JSP Calculator</h1>
+        
+        <form action="ageCalc" method="POST">
+            First: <input type="text" name="first"><br/>
+            Second: <input type="text" name="second"><br/>
+            <input type="submit" name="operation" value="+"> <input type="submit" name="operation" value="-"> 
+            <input type="submit" name="operation" value="*"> <input type="submit" name="operation" value="%">
+        </form>
+        <br/>
+        ${result}
+    </body>
+</html>
